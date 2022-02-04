@@ -1,15 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `The Power of Unity Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Marllon Brando Sandol Kakos Vilano`,
+      summary: `who started studying Unity back in 2009 and loves working with games.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `A blog with focus on the Unity Game Engine.`,
+    siteUrl: `https://sandolkakos.github.io/my-blog/`,
   },
   plugins: [
     `gatsby-plugin-image`,
