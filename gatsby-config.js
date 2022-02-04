@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: "/my-blog",
   siteMetadata: {
-    title: `The Power of Unity Blog`,
+    title: `Asgardian Dev's Blog`,
     author: {
       name: `Marllon Brando Sandol Kakos Vilano`,
-      summary: `who started studying Unity back in 2009 and loves working with games.`,
+      summary: `also known as Loki, started studying the Unity Game Engine back in 2009 and loves playing and working with games.`,
     },
     description: `A blog with focus on the Unity Game Engine.`,
     siteUrl: `https://sandolkakos.github.io/my-blog/`,
