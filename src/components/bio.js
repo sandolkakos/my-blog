@@ -33,8 +33,8 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/Marllon_Loki.jpg"
-        width={50}
-        height={50}
+        width={100}
+        height={100}
         quality={95}
         alt="Profile picture"
       />
