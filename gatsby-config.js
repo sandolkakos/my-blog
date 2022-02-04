@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/my-blog",
   siteMetadata: {
     title: `The Power of Unity Blog`,
     author: {
