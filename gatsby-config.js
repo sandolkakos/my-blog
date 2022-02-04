@@ -4,7 +4,7 @@ module.exports = {
     title: `Asgardian Dev's Blog`,
     author: {
       name: `Marllon Brando Sandol Kakos Vilano`,
-      summary: `also known as Loki, who started studying the Unity Game Engine back in 2009 and loves playing and working with games.`,
+      summary: `also known as Loki "of Asgard", who started studying the Unity Game Engine back in 2009 and loves playing and working with games.`,
     },
     description: `A blog with focus on the Unity Game Engine.`,
     siteUrl: `https://sandolkakos.github.io/my-blog/`,
