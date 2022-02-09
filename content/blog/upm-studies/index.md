@@ -299,7 +299,8 @@ The default platform for storing NPM packages.
 ```
 - Does not have the timeout problem found on Verdaccio
 - Does show the package`s name and author correctly on the UPM.
-- The dependencies can be auto resolved (despite the packages being not visible on the UPM)
+- The dependencies can be auto resolved
+- If your "com.companyname" has a max of 15 characters, the packages will be visible on the Unity Package Manager.
 - We do not need to maintain a Linux service
 ```
 
@@ -308,8 +309,10 @@ The default platform for storing NPM packages.
 - Private packages are possible only for paid accounts.
 - Packages are NOT visible on the Unity Package Manager
 - To install a package, we need to use the UPM option: add package by name…
+- Packages are visible on the Unity Package Manager ONLY if your "com.companyname" has a max of 15 characters.
 - At least the dependencies will be resolved automatically
 ```
+![NPMJS public Registry](./npmjs-registry-with-shorter-package-name.png)
 
 ##### The scopedRegistries in your manifest.json should be set like:
 ```json
