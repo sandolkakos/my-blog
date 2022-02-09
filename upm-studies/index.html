@@ -249,13 +249,47 @@ alwaysAuth = <span class="token boolean">true</span></code></pre></div>
 <h5>Pros:</h5>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">- Does not have the timeout problem found on Verdaccio
 - Does show the package`s name and author correctly on the UPM.
-- The dependencies can be auto resolved (despite the packages being not visible on the UPM)
+- The dependencies can be auto resolved
+- If your "com.companyname" has a max of 15 characters, the packages will be visible on the Unity Package Manager.
 - We do not need to maintain a Linux service</code></pre></div>
 <h5>Cons:</h5>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">- Private packages are possible only for paid accounts.
 - Packages are NOT visible on the Unity Package Manager
 - To install a package, we need to use the UPM option: add package by name…
+- Packages are visible on the Unity Package Manager ONLY if your "com.companyname" has a max of 15 characters.
 - At least the dependencies will be resolved automatically</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/my-blog/static/e04d35f9dfc1f86065cff715865e460b/09e48/npmjs-registry-with-shorter-package-name.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.708860759493675%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABNklEQVQY023P0UvCUBTH8f03VkQEq1jtuu3unnu2O5teb7ONYQtqTo0CI8o/LNNe8k1Lgob/UaX0En74vh74He0yy5RS9UYDOXBgHBh1bGKeKCX7/b5SKk3TKIo45+wPABBCOp2OxpPuUdA+DNp7kOyyeN02bUHcvbrOkyRRSkkpfd9HRH9FCEEp7fV6Wl0qxwXgngu4jnHPctyoFed5fh7Hp2EogprnC1+I9XEQBLZtF0WhTSav4/HLv0aj5+n07X4wiJoNGdY8zpA5CMAROeeIWK1Wf2d/brJYLJbL5cPjk2wXeJZB88IKU4qCOg51XQAwDCPLMu19k9lsVpZfN7d3WzrRbbFPcMeAA8M80HXDMEzTrFQqUkrtY5P5fF6W5XA4tMgxo5brVBm1ABiueJ5HCPn5+RuO6K3BF0RnZAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="NPMJS public Registry"
+        title="NPMJS public Registry"
+        src="/my-blog/static/e04d35f9dfc1f86065cff715865e460b/f058b/npmjs-registry-with-shorter-package-name.png"
+        srcset="/my-blog/static/e04d35f9dfc1f86065cff715865e460b/c26ae/npmjs-registry-with-shorter-package-name.png 158w,
+/my-blog/static/e04d35f9dfc1f86065cff715865e460b/6bdcf/npmjs-registry-with-shorter-package-name.png 315w,
+/my-blog/static/e04d35f9dfc1f86065cff715865e460b/f058b/npmjs-registry-with-shorter-package-name.png 630w,
+/my-blog/static/e04d35f9dfc1f86065cff715865e460b/40601/npmjs-registry-with-shorter-package-name.png 945w,
+/my-blog/static/e04d35f9dfc1f86065cff715865e460b/09e48/npmjs-registry-with-shorter-package-name.png 974w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
 <h5>The scopedRegistries in your manifest.json should be set like:</h5>
 <div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token property">"scopedRegistries"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
@@ -289,4 +323,4 @@ alwaysAuth = <span class="token boolean">true</span></code></pre></div>
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/upm-studies/";window.___webpackCompilationHash="01f0e1251b15ca2addc4";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-67664a8ccc6c9f02b880.js"],"app":["/app-74cb160819100fa12776.js"],"component---src-pages-404-js":["/component---src-pages-404-js-27981ca7dd461cb4280e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-307dfb56c4d5e94621fe.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-422222b701089fbe3088.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-d731cc9a331efaf6dc68.js"]};/*]]>*/</script><script src="/my-blog/polyfill-67664a8ccc6c9f02b880.js" nomodule=""></script><script src="/my-blog/component---src-templates-blog-post-js-d731cc9a331efaf6dc68.js" async=""></script><script src="/my-blog/commons-a95cfe40e53cc29a4c51.js" async=""></script><script src="/my-blog/app-74cb160819100fa12776.js" async=""></script><script src="/my-blog/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/my-blog/webpack-runtime-33dabaffa7cd1811ee16.js" async=""></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/upm-studies/";window.___webpackCompilationHash="9e2aef149f344e6ffa3b";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-67664a8ccc6c9f02b880.js"],"app":["/app-74cb160819100fa12776.js"],"component---src-pages-404-js":["/component---src-pages-404-js-27981ca7dd461cb4280e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-307dfb56c4d5e94621fe.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-422222b701089fbe3088.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-d731cc9a331efaf6dc68.js"]};/*]]>*/</script><script src="/my-blog/polyfill-67664a8ccc6c9f02b880.js" nomodule=""></script><script src="/my-blog/component---src-templates-blog-post-js-d731cc9a331efaf6dc68.js" async=""></script><script src="/my-blog/commons-a95cfe40e53cc29a4c51.js" async=""></script><script src="/my-blog/app-74cb160819100fa12776.js" async=""></script><script src="/my-blog/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/my-blog/webpack-runtime-33dabaffa7cd1811ee16.js" async=""></script></body></html>
