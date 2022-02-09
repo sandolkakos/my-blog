@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A blog with focus on the Unity Game Engine.]]></description><link>https://sandolkakos.github.io/my-blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Feb 2022 23:34:21 GMT</lastBuildDate><item><title><![CDATA[Unity Package Manager Studies]]></title><description><![CDATA[At the time of writing this (February of 2022), there are multiple ways of importing a package into a Unity project, and this post is a…]]></description><link>https://sandolkakos.github.io/my-blog/upm-studies/</link><guid isPermaLink="false">https://sandolkakos.github.io/my-blog/upm-studies/</guid><pubDate>Thu, 03 Feb 2022 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;At the time of writing this (February of 2022), there are multiple ways of importing a package into a Unity project, and this post is a compilation of my findings regarding the use of the &lt;a href=&quot;https://docs.unity3d.com/Manual/upm-ui.html&quot;&gt;UPM - Unity Package Manager&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A blog with focus on the Unity Game Engine.]]></description><link>https://sandolkakos.github.io/my-blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Feb 2022 23:38:57 GMT</lastBuildDate><item><title><![CDATA[Unity Package Manager Studies]]></title><description><![CDATA[At the time of writing this (February of 2022), there are multiple ways of importing a package into a Unity project, and this post is a…]]></description><link>https://sandolkakos.github.io/my-blog/upm-studies/</link><guid isPermaLink="false">https://sandolkakos.github.io/my-blog/upm-studies/</guid><pubDate>Thu, 03 Feb 2022 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;At the time of writing this (February of 2022), there are multiple ways of importing a package into a Unity project, and this post is a compilation of my findings regarding the use of the &lt;a href=&quot;https://docs.unity3d.com/Manual/upm-ui.html&quot;&gt;UPM - Unity Package Manager&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The Unity Package Manager was introduced on &lt;strong&gt;&lt;a href=&quot;https://blog.unity.com/technology/unity-2017-2-is-now-available&quot;&gt;Unity 2017.2&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -247,13 +247,15 @@ alwaysAuth = &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;/c
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- Does not have the timeout problem found on Verdaccio
 - Does show the package`s name and author correctly on the UPM.
 - The dependencies can be auto resolved
-- If your &quot;com.companyname&quot; has a max of 15 characters, the packages will be visible on the Unity Package Manager.
+- Packages are visible on the Unity Package Manager
+  - ONLY if your &quot;com.companyname&quot; has a max of 15 characters.
 - We do not need to maintain a Linux service&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h5&gt;Cons:&lt;/h5&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- Private packages are possible only for paid accounts.
 - Packages are NOT visible on the Unity Package Manager
 - To install a package, we need to use the UPM option: add package by name…
-- Packages are visible on the Unity Package Manager ONLY if your &quot;com.companyname&quot; has a max of 15 characters.
+- Packages are visible on the Unity Package Manager
+  - ONLY if your &quot;com.companyname&quot; has a max of 15 characters.
 - At least the dependencies will be resolved automatically&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
